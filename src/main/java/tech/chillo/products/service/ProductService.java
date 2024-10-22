@@ -52,6 +52,7 @@ public class ProductService {
                     .price(index*100)
                     .build();
                 }
+                
         ).collect(Collectors.toList());
 
         this.productRepository.saveAll(products);
